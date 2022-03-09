@@ -9,7 +9,8 @@ const ReplySchema = new Schema(
       default: () => new Types.ObjectId()
     },
     replyBody: {
-      type: String
+      type: String,
+      trim: true
     },
     writtenBy: {
       type: String
